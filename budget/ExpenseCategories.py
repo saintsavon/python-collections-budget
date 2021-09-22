@@ -43,7 +43,7 @@ def main():
 
     ax.pie(divided_expenses_sum, labels = labels, autopct = '%1.1f%%')
 
-    plt.show
+    plt.show()
 
 
 if __name__ == "__main__":
