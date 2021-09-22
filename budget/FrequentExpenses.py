@@ -1,6 +1,6 @@
 import collections
-import Expense
 import matplotlib.pyplot as plt
+from . import Expense
 
 
 expenses = Expense.Expenses()
