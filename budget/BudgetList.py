@@ -1,5 +1,5 @@
-from . import Expense
-#import Expense
+#from . import Expense
+import Expense
 import matplotlib.pyplot as plt
 
 class BudgetList():
@@ -24,12 +24,13 @@ class BudgetList():
 
     def __iter__(self):
         iter(self.expenses)
+        self.iter_e = iter(self.expenses)
         self.iter_o = iter(self.overages)
         return self
 
     def __next__(self):
         try:
-            return self.iter_o.__next__()
+            return self.iter_e.__next__()
         except StopIteration as stop:
             return self.iter_o.__next__()
 
